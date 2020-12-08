@@ -48,8 +48,6 @@ namespace Lab5_addition
             { 'ю', 'б' },
             { 'я', 'а' }
         };
-        List<char> auxiliaryChars = new List<char>() { ' ', '.', ',', '-', '+', '-', '=', '*', '/', '@', '"',
-            '!', '?', '&', '^', '%', '(', ')', '{', '}', '[', ']', '<', '>' };
 
         public Form1()
         {
@@ -109,11 +107,10 @@ namespace Lab5_addition
 
         private void Encrypt()
         {
-            string strWithDelAuxiliaryChars = DeleteAuxiliaryChars();
             string result = "";
-            foreach(var ch in strWithDelAuxiliaryChars)
+            foreach(var ch in richTextBox1.Text.ToLower())
             {
-                result += letters[ch];
+                result += letters.ContainsKey(ch) ? letters[ch] : ch;
             }
             richTextBox2.Text = result;
         }
@@ -123,21 +120,9 @@ namespace Lab5_addition
             string result = "";
             foreach(var ch in richTextBox1.Text.ToLower())
             {
-                result += letters.Where(c => c.Value == ch).Select(c => c.Key).FirstOrDefault();
+                result += letters.Any(c => c.Value == ch) ? letters.Where(c => c.Value == ch).Select(c => c.Key).First() : ch;
             }
             richTextBox2.Text = result;
-        }
-
-        private string DeleteAuxiliaryChars()
-        {
-            string result = "";
-            foreach(var ch in richTextBox1.Text)
-            {
-                if (auxiliaryChars.Contains(ch))
-                    continue;
-                result += ch;
-            }
-            return result.ToLower();
         }
     }
 }
