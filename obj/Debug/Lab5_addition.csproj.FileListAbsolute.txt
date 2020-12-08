@@ -1,0 +1,10 @@
+E:\Univer\Information protection on computer systems\Lab5_addition\bin\Debug\Lab5_addition.exe.config
+E:\Univer\Information protection on computer systems\Lab5_addition\bin\Debug\Lab5_addition.exe
+E:\Univer\Information protection on computer systems\Lab5_addition\bin\Debug\Lab5_addition.pdb
+E:\Univer\Information protection on computer systems\Lab5_addition\obj\Debug\Lab5_addition.csprojAssemblyReference.cache
+E:\Univer\Information protection on computer systems\Lab5_addition\obj\Debug\Lab5_addition.Form1.resources
+E:\Univer\Information protection on computer systems\Lab5_addition\obj\Debug\Lab5_addition.Properties.Resources.resources
+E:\Univer\Information protection on computer systems\Lab5_addition\obj\Debug\Lab5_addition.csproj.GenerateResource.cache
+E:\Univer\Information protection on computer systems\Lab5_addition\obj\Debug\Lab5_addition.csproj.CoreCompileInputs.cache
+E:\Univer\Information protection on computer systems\Lab5_addition\obj\Debug\Lab5_addition.exe
+E:\Univer\Information protection on computer systems\Lab5_addition\obj\Debug\Lab5_addition.pdb
